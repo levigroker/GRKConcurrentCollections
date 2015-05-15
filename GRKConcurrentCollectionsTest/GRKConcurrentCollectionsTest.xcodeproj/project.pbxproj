@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBA9C6061B03E1B400509C46 /* libGRKConcurrentCollectionsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA9C5FA1B03E1B400509C46 /* libGRKConcurrentCollectionsTest.a */; };
+		DBA9C62B1B03E22300509C46 /* GRKConcurrentMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9C6251B03E22300509C46 /* GRKConcurrentMutableArray.h */; };
+		DBA9C62C1B03E22300509C46 /* GRKConcurrentMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6261B03E22300509C46 /* GRKConcurrentMutableArray.m */; };
+		DBA9C62D1B03E22300509C46 /* GRKConcurrentMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6261B03E22300509C46 /* GRKConcurrentMutableArray.m */; };
+		DBA9C62E1B03E22300509C46 /* GRKConcurrentMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9C6271B03E22300509C46 /* GRKConcurrentMutableDictionary.h */; };
+		DBA9C62F1B03E22300509C46 /* GRKConcurrentMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6281B03E22300509C46 /* GRKConcurrentMutableDictionary.m */; };
+		DBA9C6301B03E22300509C46 /* GRKConcurrentMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6281B03E22300509C46 /* GRKConcurrentMutableDictionary.m */; };
+		DBA9C6311B03E22300509C46 /* GRKConcurrentMutableSet.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA9C6291B03E22300509C46 /* GRKConcurrentMutableSet.h */; };
+		DBA9C6321B03E22300509C46 /* GRKConcurrentMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C62A1B03E22300509C46 /* GRKConcurrentMutableSet.m */; };
+		DBA9C6331B03E22300509C46 /* GRKConcurrentMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C62A1B03E22300509C46 /* GRKConcurrentMutableSet.m */; };
+		DBA9C6351B054DE900509C46 /* GRKConcurrentMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6341B054DE900509C46 /* GRKConcurrentMutableArrayTests.m */; };
+		DBA9C6371B0699E400509C46 /* GRKConcurrentMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6361B0699E400509C46 /* GRKConcurrentMutableDictionaryTests.m */; };
+		DBA9C6391B06B0A900509C46 /* GRKConcurrentMutableSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA9C6381B06B0A900509C46 /* GRKConcurrentMutableSetTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBA9C6071B03E1B400509C46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBA9C5F21B03E1B400509C46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA9C5F91B03E1B400509C46;
+			remoteInfo = GRKConcurrentCollectionsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBA9C5FA1B03E1B400509C46 /* libGRKConcurrentCollectionsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGRKConcurrentCollectionsTest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA9C6051B03E1B400509C46 /* GRKConcurrentCollectionsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRKConcurrentCollectionsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA9C60B1B03E1B400509C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA9C6251B03E22300509C46 /* GRKConcurrentMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKConcurrentMutableArray.h; sourceTree = "<group>"; };
+		DBA9C6261B03E22300509C46 /* GRKConcurrentMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKConcurrentMutableArray.m; sourceTree = "<group>"; };
+		DBA9C6271B03E22300509C46 /* GRKConcurrentMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKConcurrentMutableDictionary.h; sourceTree = "<group>"; };
+		DBA9C6281B03E22300509C46 /* GRKConcurrentMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKConcurrentMutableDictionary.m; sourceTree = "<group>"; };
+		DBA9C6291B03E22300509C46 /* GRKConcurrentMutableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKConcurrentMutableSet.h; sourceTree = "<group>"; };
+		DBA9C62A1B03E22300509C46 /* GRKConcurrentMutableSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKConcurrentMutableSet.m; sourceTree = "<group>"; };
+		DBA9C6341B054DE900509C46 /* GRKConcurrentMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKConcurrentMutableArrayTests.m; sourceTree = "<group>"; };
+		DBA9C6361B0699E400509C46 /* GRKConcurrentMutableDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKConcurrentMutableDictionaryTests.m; sourceTree = "<group>"; };
+		DBA9C6381B06B0A900509C46 /* GRKConcurrentMutableSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKConcurrentMutableSetTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA9C5F71B03E1B400509C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9C6021B03E1B400509C46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9C6061B03E1B400509C46 /* libGRKConcurrentCollectionsTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBA9C5F11B03E1B400509C46 = {
+			isa = PBXGroup;
+			children = (
+				DBA9C6241B03E22200509C46 /* GRKConcurrentCollections */,
+				DBA9C6091B03E1B400509C46 /* GRKConcurrentCollectionsTestTests */,
+				DBA9C5FB1B03E1B400509C46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA9C5FB1B03E1B400509C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9C5FA1B03E1B400509C46 /* libGRKConcurrentCollectionsTest.a */,
+				DBA9C6051B03E1B400509C46 /* GRKConcurrentCollectionsTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA9C6091B03E1B400509C46 /* GRKConcurrentCollectionsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9C6341B054DE900509C46 /* GRKConcurrentMutableArrayTests.m */,
+				DBA9C6361B0699E400509C46 /* GRKConcurrentMutableDictionaryTests.m */,
+				DBA9C6381B06B0A900509C46 /* GRKConcurrentMutableSetTests.m */,
+				DBA9C60A1B03E1B400509C46 /* Supporting Files */,
+			);
+			path = GRKConcurrentCollectionsTestTests;
+			sourceTree = "<group>";
+		};
+		DBA9C60A1B03E1B400509C46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9C60B1B03E1B400509C46 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBA9C6241B03E22200509C46 /* GRKConcurrentCollections */ = {
+			isa = PBXGroup;
+			children = (
+				DBA9C6251B03E22300509C46 /* GRKConcurrentMutableArray.h */,
+				DBA9C6261B03E22300509C46 /* GRKConcurrentMutableArray.m */,
+				DBA9C6271B03E22300509C46 /* GRKConcurrentMutableDictionary.h */,
+				DBA9C6281B03E22300509C46 /* GRKConcurrentMutableDictionary.m */,
+				DBA9C6291B03E22300509C46 /* GRKConcurrentMutableSet.h */,
+				DBA9C62A1B03E22300509C46 /* GRKConcurrentMutableSet.m */,
+			);
+			name = GRKConcurrentCollections;
+			path = ../GRKConcurrentCollections;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DBA9C5F81B03E1B400509C46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9C62E1B03E22300509C46 /* GRKConcurrentMutableDictionary.h in Headers */,
+				DBA9C62B1B03E22300509C46 /* GRKConcurrentMutableArray.h in Headers */,
+				DBA9C6311B03E22300509C46 /* GRKConcurrentMutableSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DBA9C5F91B03E1B400509C46 /* GRKConcurrentCollectionsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA9C60E1B03E1B400509C46 /* Build configuration list for PBXNativeTarget "GRKConcurrentCollectionsTest" */;
+			buildPhases = (
+				DBA9C5F61B03E1B400509C46 /* Sources */,
+				DBA9C5F71B03E1B400509C46 /* Frameworks */,
+				DBA9C5F81B03E1B400509C46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRKConcurrentCollectionsTest;
+			productName = GRKConcurrentCollectionsTest;
+			productReference = DBA9C5FA1B03E1B400509C46 /* libGRKConcurrentCollectionsTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DBA9C6041B03E1B400509C46 /* GRKConcurrentCollectionsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA9C6111B03E1B400509C46 /* Build configuration list for PBXNativeTarget "GRKConcurrentCollectionsTestTests" */;
+			buildPhases = (
+				DBA9C6011B03E1B400509C46 /* Sources */,
+				DBA9C6021B03E1B400509C46 /* Frameworks */,
+				DBA9C6031B03E1B400509C46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBA9C6081B03E1B400509C46 /* PBXTargetDependency */,
+			);
+			name = GRKConcurrentCollectionsTestTests;
+			productName = GRKConcurrentCollectionsTestTests;
+			productReference = DBA9C6051B03E1B400509C46 /* GRKConcurrentCollectionsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA9C5F21B03E1B400509C46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Levi Brown";
+				TargetAttributes = {
+					DBA9C5F91B03E1B400509C46 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					DBA9C6041B03E1B400509C46 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DBA9C5F51B03E1B400509C46 /* Build configuration list for PBXProject "GRKConcurrentCollectionsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBA9C5F11B03E1B400509C46;
+			productRefGroup = DBA9C5FB1B03E1B400509C46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA9C5F91B03E1B400509C46 /* GRKConcurrentCollectionsTest */,
+				DBA9C6041B03E1B400509C46 /* GRKConcurrentCollectionsTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA9C6031B03E1B400509C46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA9C5F61B03E1B400509C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9C62F1B03E22300509C46 /* GRKConcurrentMutableDictionary.m in Sources */,
+				DBA9C62C1B03E22300509C46 /* GRKConcurrentMutableArray.m in Sources */,
+				DBA9C6321B03E22300509C46 /* GRKConcurrentMutableSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBA9C6011B03E1B400509C46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA9C6351B054DE900509C46 /* GRKConcurrentMutableArrayTests.m in Sources */,
+				DBA9C6301B03E22300509C46 /* GRKConcurrentMutableDictionary.m in Sources */,
+				DBA9C62D1B03E22300509C46 /* GRKConcurrentMutableArray.m in Sources */,
+				DBA9C6331B03E22300509C46 /* GRKConcurrentMutableSet.m in Sources */,
+				DBA9C6371B0699E400509C46 /* GRKConcurrentMutableDictionaryTests.m in Sources */,
+				DBA9C6391B06B0A900509C46 /* GRKConcurrentMutableSetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA9C6081B03E1B400509C46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBA9C5F91B03E1B400509C46 /* GRKConcurrentCollectionsTest */;
+			targetProxy = DBA9C6071B03E1B400509C46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DBA9C60C1B03E1B400509C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DBA9C60D1B03E1B400509C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DBA9C60F1B03E1B400509C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBA9C6101B03E1B400509C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBA9C6121B03E1B400509C46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GRKConcurrentCollectionsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBA9C6131B03E1B400509C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GRKConcurrentCollectionsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA9C5F51B03E1B400509C46 /* Build configuration list for PBXProject "GRKConcurrentCollectionsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9C60C1B03E1B400509C46 /* Debug */,
+				DBA9C60D1B03E1B400509C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA9C60E1B03E1B400509C46 /* Build configuration list for PBXNativeTarget "GRKConcurrentCollectionsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9C60F1B03E1B400509C46 /* Debug */,
+				DBA9C6101B03E1B400509C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBA9C6111B03E1B400509C46 /* Build configuration list for PBXNativeTarget "GRKConcurrentCollectionsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA9C6121B03E1B400509C46 /* Debug */,
+				DBA9C6131B03E1B400509C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA9C5F21B03E1B400509C46 /* Project object */;
+}
