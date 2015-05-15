@@ -71,7 +71,7 @@
 
 - (BOOL)isEqualToArray:(GRKConcurrentMutableArray *)otherArray
 {
-    BOOL retVal = [self isEqualTo:otherArray];
+    BOOL retVal = [self isEqual:otherArray];
     if (!retVal)
     {
         NSArray *us = [self nonConcurrentArray];

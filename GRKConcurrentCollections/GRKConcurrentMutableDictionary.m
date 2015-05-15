@@ -71,7 +71,7 @@
 
 - (BOOL)isEqualToDictionary:(GRKConcurrentMutableDictionary *)otherDictionary
 {
-    BOOL retVal = [self isEqualTo:otherDictionary];
+    BOOL retVal = [self isEqual:otherDictionary];
     if (!retVal)
     {
         NSDictionary *us = [self nonConcurrentDictionary];
