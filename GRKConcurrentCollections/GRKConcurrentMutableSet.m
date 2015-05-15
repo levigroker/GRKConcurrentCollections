@@ -96,6 +96,19 @@
     return retVal;
 }
 
+- (BOOL)isEqualToSet:(GRKConcurrentMutableSet *)otherSet
+{
+    BOOL retVal = [self isEqual:otherSet];
+    if (!retVal)
+    {
+        NSSet *us = [self nonConcurrentSet];
+        NSSet *them = [otherSet nonConcurrentSet];
+        retVal = [us isEqualToSet:them];
+    }
+    
+    return retVal;
+}
+
 #pragma mark - Augmentitive Operations
 
 #pragma mark Augment

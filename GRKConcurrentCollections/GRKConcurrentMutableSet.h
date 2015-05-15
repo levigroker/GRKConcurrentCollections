@@ -40,6 +40,16 @@
 - (id)anyObject;
 - (BOOL)containsObject:(id)anObject;
 
+/**
+ * Is the receiver equal to the given set.
+ *
+ * @param otherSet The set to compare with.
+ *
+ * @return `YES` only if the caller is the same object as the given set
+ * or if the set contents are equal at the time of this call.
+ */
+- (BOOL)isEqualToSet:(GRKConcurrentMutableSet *)otherSet;
+
 #pragma mark - Augmentitive Operations
 
 #pragma mark Augment
