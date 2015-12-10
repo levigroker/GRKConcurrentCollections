@@ -19,7 +19,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GRKConcurrentMutableArray : NSObject
+@interface GRKConcurrentMutableArray : NSObject <NSFastEnumeration>
 
 /**
  * The number of elements in this array.

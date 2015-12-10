@@ -72,4 +72,33 @@
     }
 }
 
+- (void)testFastEnumeration
+{
+    NSDictionary *input = @{@"zero" : @(0), @"one" : @(1), @"two" : @(2), @"three" : @(3), @"four" : @(4), @"five" : @(5)};
+    NSDictionary *output = @{@"zero" : @(0), @"one" : @(1), @"two" : @(2), @"more" : @(3)};
+
+    [self.dict addEntriesFromDictionary:input];
+
+    dispatch_group_t group = dispatch_group_create();
+
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (id object in self.dict) {
+            // Mutate while enumerating
+            XCTAssert(object);
+            NSNumber *object = [NSNumber numberWithInt:3];
+            NSString *key = [NSString stringWithFormat:@"more"];
+            [self.dict setObject:object forKey:key];
+        }
+    });
+
+    [self.dict removeObjectForKey:@"three"];
+    [self.dict removeObjectForKey:@"four"];
+    [self.dict removeObjectForKey:@"five"];
+
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+
+    XCTAssertTrue([[self.dict nonConcurrentDictionary] isEqualToDictionary:output]);
+}
+
+
 @end

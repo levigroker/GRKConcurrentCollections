@@ -219,4 +219,16 @@
     return [NSString stringWithFormat:@"<%@: %p, count: %d encapsulatedArray: %@ >", NSStringFromClass([self class]), self, (int)self.count, self.encapsulatedArray];
 }
 
+#pragma mark - NSFastEnumeration
+
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
+                                  objects:(id __unsafe_unretained [])buffer
+                                    count:(NSUInteger)len;{
+    __block NSUInteger retVal;
+    dispatch_sync(self.access_queue, ^{
+        retVal = [[self.encapsulatedArray copy] countByEnumeratingWithState:state objects:buffer count:len];
+    });
+    return retVal;
+}
+
 @end

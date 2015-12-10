@@ -91,4 +91,29 @@
     XCTAssertTrue(self.array.count == 0);
 }
 
+- (void)testFastEnumeration
+{
+    NSArray *input = @[@"zero", @"one", @"two", @"three", @"four", @"five"];
+    NSArray *output = @[@"zero", @"one", @"two", @"more", @"more", @"more"];
+    [self.array addObjectsFromArray:input];
+
+    dispatch_group_t group = dispatch_group_create();
+
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (id object in self.array) {
+            // Mutate while enumerating
+            XCTAssert(object);
+            [self.array addObject:@"more"];
+        }
+    });
+
+    [self.array removeObject:@"three"];
+    [self.array removeObject:@"four"];
+    [self.array removeObject:@"five"];
+
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+
+    XCTAssertTrue([[self.array nonConcurrentArray] isEqualToArray:output]);
+}
+
 @end
