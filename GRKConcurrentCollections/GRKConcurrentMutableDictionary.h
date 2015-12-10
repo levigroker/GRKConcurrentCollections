@@ -19,7 +19,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GRKConcurrentMutableDictionary : NSObject
+@interface GRKConcurrentMutableDictionary : NSObject <NSFastEnumeration>
 
 /**
  * The number of elements in this dictionary.

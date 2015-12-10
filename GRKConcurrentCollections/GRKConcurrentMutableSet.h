@@ -19,7 +19,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GRKConcurrentMutableSet : NSObject
+@interface GRKConcurrentMutableSet : NSObject <NSFastEnumeration>
 
 /**
  * The number of elements in this set.
